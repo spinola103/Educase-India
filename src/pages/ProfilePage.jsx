@@ -9,8 +9,8 @@ const ProfilePage = () => {
 
     if (storedUser) {
       const parsedUser = JSON.parse(storedUser);
-      setEmail(parsedUser.email || "prem@gmail.com");
-      setName(parsedUser.fullName || "Prem");
+      setEmail(parsedUser.email || "spin@gmail.com");
+      setName(parsedUser.fullName || "Spinola");
     } else {
       setEmail("prem@gmail.com");
       setName("Prem");
