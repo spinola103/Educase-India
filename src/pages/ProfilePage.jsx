@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const ProfilePage = () => {
-  const [name, setName] = useState("Prem");
-  const [email, setEmail] = useState("prem@gmail.com");
+  const [name, setName] = useState("Spinola");
+  const [email, setEmail] = useState("spin@gmail.com");
   useEffect(() => {
     const storedUser = localStorage.getItem("reactInternship");
 
@@ -12,8 +12,8 @@ const ProfilePage = () => {
       setEmail(parsedUser.email || "spin@gmail.com");
       setName(parsedUser.fullName || "Spinola");
     } else {
-      setEmail("prem@gmail.com");
-      setName("Prem");
+      setEmail("spin@gmail.com");
+      setName("Spinola");
     }
   }, []);
 
